@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snippet Saver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="auth-section">
+        <h1>Snippet Saver</h1>
+
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button id="login-btn">Login</button>
+            <p>No account? <span id="show-register">Register</span></p>
+        </div>
+
+        <div id="register-form" style="display:none">
+            <h2>Register</h2>
+            <input type="text" id="register-name" placeholder="Name">
+            <input type="email" id="register-email" placeholder="Email">
+            <input type="password" id="register-password" placeholder="Password">
+            <input type="password" id="register-password-confirm" placeholder="Confirm Password">
+            <button id="register-btn">Register</button>
+            <p>Have an account? <span id="show-login">Login</span></p>
+        </div>
+    </div>
+
+    <div id="app-section" style="display:none">
+        <div id="header">
+            <h1>My Snippets</h1>
+            <button id="logout-btn">Logout</button>
+        </div>
+
+        <div id="create-snippet">
+            <input type="text" id="snippet-title" placeholder="Title">
+            <textarea id="snippet-content" placeholder="Write your snippet here..."></textarea>
+            <button id="save-btn">Save Snippet</button>
+        </div>
+
+        <div id="snippets-list"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
